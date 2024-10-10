@@ -8,6 +8,7 @@ import 'src/generated/l10n.dart';
 import 'src/routes/routes.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await SVStoreService.initialize();
   await EncryptedSVStoreService.initialize();
   runApp(const ProviderScope(

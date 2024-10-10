@@ -16,53 +16,56 @@ final rootNavigatorKey = GlobalKey<NavigatorState>();
 final shellRouteNavigatorKey = GlobalKey<NavigatorState>();
 
 final routerProvider = Provider((ref) {
-  return GoRouter(navigatorKey: rootNavigatorKey, routes: [
-    GoRoute(
-      path: "/splash",
-      name: SplashViews.name,
-      pageBuilder: (context, state) => const SnapPandaPage(child: SplashViews()),
-    ),
-    ShellRoute(
-        navigatorKey: shellRouteNavigatorKey,
-        builder: (context, state, child) => RootViews(child: child),
-        routes: [
-          GoRoute(
-            path: "/",
-            name: HomeViews.name,
-            pageBuilder: (context, state) =>
-                const SnapPandaPage(child: HomeViews()),
-          ),
-          GoRoute(
-            path: "/payments",
-            name: PaymentViews.name,
-            pageBuilder: (context, state) =>
-                const SnapPandaPage(child: PaymentViews()),
-          ),
-          GoRoute(
-            path: "/getting-started",
-            name: HomeViews.name,
-            pageBuilder: (context, state) =>
-                const SnapPandaPage(child: GettingStartedViews()),
-          ),
-          GoRoute(
-            path: "/choose-language",
-            name: ChooseLanguageViews.name,
-            pageBuilder: (context, state) =>
-                const SnapPandaPage(child: ChooseLanguageViews()),
-          ),
-          GoRoute(
-            path: "/storage-videos",
-            name: StorageVideosViews.name,
-            pageBuilder: (context, state) =>
-                const SnapPandaPage(child: StorageVideosViews()),
-          ),
-          GoRoute(
-            path: "/option-download",
-            name: OptionDownloadViews.name,
-            pageBuilder: (context, state) =>
-                const SnapPandaPage(child: OptionDownloadViews()),
-          ),
-          
-        ])
-  ]);
+  return GoRouter(
+      navigatorKey: rootNavigatorKey,
+      initialLocation: "/splash",
+      routes: [
+        GoRoute(
+          path: "/splash",
+          name: SplashViews.name,
+          pageBuilder: (context, state) =>
+              const SnapPandaPage(child: SplashViews()),
+        ),
+        ShellRoute(
+            navigatorKey: shellRouteNavigatorKey,
+            builder: (context, state, child) => RootViews(child: child),
+            routes: [
+              GoRoute(
+                path: "/",
+                name: HomeViews.name,
+                pageBuilder: (context, state) =>
+                    const SnapPandaPage(child: HomeViews()),
+              ),
+              GoRoute(
+                path: "/payments",
+                name: PaymentViews.name,
+                pageBuilder: (context, state) =>
+                    const SnapPandaPage(child: PaymentViews()),
+              ),
+              GoRoute(
+                path: "/getting-started",
+                name: GettingStartedViews.name,
+                pageBuilder: (context, state) =>
+                    const SnapPandaPage(child: GettingStartedViews()),
+              ),
+              GoRoute(
+                path: "/choose-language",
+                name: ChooseLanguageViews.name,
+                pageBuilder: (context, state) =>
+                    const SnapPandaPage(child: ChooseLanguageViews()),
+              ),
+              GoRoute(
+                path: "/storage-videos",
+                name: StorageVideosViews.name,
+                pageBuilder: (context, state) =>
+                    const SnapPandaPage(child: StorageVideosViews()),
+              ),
+              GoRoute(
+                path: "/option-download",
+                name: OptionDownloadViews.name,
+                pageBuilder: (context, state) =>
+                    const SnapPandaPage(child: OptionDownloadViews()),
+              ),
+            ])
+      ]);
 });

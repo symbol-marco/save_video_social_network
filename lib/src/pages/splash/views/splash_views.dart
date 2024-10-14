@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:save_video_social_network/src/pages/getting_started/views/getting_started.dart';
-import 'package:save_video_social_network/src/pages/home/views/home_views.dart';
 
 class SplashViews extends StatefulWidget {
   static const name = 'splash-views';
@@ -16,7 +15,7 @@ class _SplashViewsState extends State<SplashViews> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      Future.delayed(const Duration(seconds: 3),
+      Future.delayed(const Duration(seconds: 1),
           () => context.goNamed(GettingStartedViews.name));
     });
   }

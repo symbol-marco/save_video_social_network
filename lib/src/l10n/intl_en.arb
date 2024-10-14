@@ -1,3 +1,12 @@
 {
- "setting":"setting"
+ "setting":"setting",
+ "title_intro_started": "Esaily Download Videos",
+ "intro_started" : "Save your favorite videos from popular social media platforms with just a few taps",
+ "title_intro_second": "Fast & Secure",
+ "intro_second": "Enjoy quick downloads while keeping your data safe and secure",
+ "title_intro_ended": "Offline Access", 
+ "intro_ended":"Watch your downloaded videos anytime, anywhere, without the need for internet",
+
+ "upgrade_premium": "Nâng cấp lên Premium",
+ "":"",
 }

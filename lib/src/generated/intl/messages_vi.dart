@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a en locale. All the
+// This is a library that provides messages for a vi locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,22 +18,22 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'en';
+  String get localeName => 'vi';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "intro_ended": MessageLookupByLibrary.simpleMessage(
-            "Watch your downloaded videos anytime, anywhere, withou the need for internet"),
+            "Xem video đã tải bất cứ lúc nào, ở bất kỳ đâu mà không cần kết nối internet."),
         "intro_second": MessageLookupByLibrary.simpleMessage(
-            "Enjoy quick downloads while keeping your data safe and secure"),
+            "Tận hưởng tốc độ tải nhanh chóng, đồng thời đảm bảo dữ liệu của bạn luôn an toàn và bảo mật."),
         "intro_started": MessageLookupByLibrary.simpleMessage(
-            "Save your favorite videos from popular social media platforms with just a few taps"),
+            "Lưu những video yêu thích từ các mạng xã hội phổ biến chỉ với vài thao tác đơn giản."),
         "setting": MessageLookupByLibrary.simpleMessage("setting"),
         "title_intro_ended":
-            MessageLookupByLibrary.simpleMessage("Offline Access"),
+            MessageLookupByLibrary.simpleMessage("Xem ngoại tuyến"),
         "title_intro_second":
-            MessageLookupByLibrary.simpleMessage("Fast & Secure"),
+            MessageLookupByLibrary.simpleMessage("Nhanh chóng & An toàn"),
         "title_intro_started":
-            MessageLookupByLibrary.simpleMessage("Esaily Download Videos")
+            MessageLookupByLibrary.simpleMessage("Tải video dễ dàng")
       };
 }

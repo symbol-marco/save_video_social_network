@@ -26,6 +26,12 @@ final routerProvider = Provider((ref) {
           pageBuilder: (context, state) =>
               const SnapPandaPage(child: SplashViews()),
         ),
+        GoRoute(
+          path: "/getting-started",
+          name: GettingStartedViews.name,
+          pageBuilder: (context, state) =>
+              const SnapPandaPage(child: GettingStartedViews()),
+        ),
         ShellRoute(
             navigatorKey: shellRouteNavigatorKey,
             builder: (context, state, child) => RootViews(child: child),
@@ -41,12 +47,6 @@ final routerProvider = Provider((ref) {
                 name: PaymentViews.name,
                 pageBuilder: (context, state) =>
                     const SnapPandaPage(child: PaymentViews()),
-              ),
-              GoRoute(
-                path: "/getting-started",
-                name: GettingStartedViews.name,
-                pageBuilder: (context, state) =>
-                    const SnapPandaPage(child: GettingStartedViews()),
               ),
               GoRoute(
                 path: "/choose-language",

@@ -59,6 +59,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Esaily Download Videos`
+  String get title_intro_started {
+    return Intl.message(
+      'Esaily Download Videos',
+      name: 'title_intro_started',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save your favorite videos from popular social media platforms with just a few taps`
+  String get intro_started {
+    return Intl.message(
+      'Save your favorite videos from popular social media platforms with just a few taps',
+      name: 'intro_started',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fast & Secure`
+  String get title_intro_second {
+    return Intl.message(
+      'Fast & Secure',
+      name: 'title_intro_second',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enjoy quick downloads while keeping your data safe and secure`
+  String get intro_second {
+    return Intl.message(
+      'Enjoy quick downloads while keeping your data safe and secure',
+      name: 'intro_second',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Offline Access`
+  String get title_intro_ended {
+    return Intl.message(
+      'Offline Access',
+      name: 'title_intro_ended',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Watch your downloaded videos anytime, anywhere, withou the need for internet`
+  String get intro_ended {
+    return Intl.message(
+      'Watch your downloaded videos anytime, anywhere, withou the need for internet',
+      name: 'intro_ended',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -67,6 +127,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'vi'),
     ];
   }
 

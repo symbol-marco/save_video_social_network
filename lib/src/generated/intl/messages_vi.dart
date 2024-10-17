@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "download": MessageLookupByLibrary.simpleMessage("Tải xuống"),
+        "hint_textfield_download":
+            MessageLookupByLibrary.simpleMessage("Liên kết dán để tải xuống"),
         "intro_ended": MessageLookupByLibrary.simpleMessage(
             "Xem video đã tải bất cứ lúc nào, ở bất kỳ đâu mà không cần kết nối internet."),
         "intro_second": MessageLookupByLibrary.simpleMessage(
@@ -34,6 +37,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "title_intro_second":
             MessageLookupByLibrary.simpleMessage("Nhanh chóng & An toàn"),
         "title_intro_started":
-            MessageLookupByLibrary.simpleMessage("Tải video dễ dàng")
+            MessageLookupByLibrary.simpleMessage("Tải video dễ dàng"),
+        "upgrade_premium":
+            MessageLookupByLibrary.simpleMessage("Nâng cấp lên Premium")
       };
 }

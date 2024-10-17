@@ -22,8 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "download": MessageLookupByLibrary.simpleMessage("Download"),
+        "hint_textfield_download":
+            MessageLookupByLibrary.simpleMessage("Paste link to downloads"),
         "intro_ended": MessageLookupByLibrary.simpleMessage(
-            "Watch your downloaded videos anytime, anywhere, withou the need for internet"),
+            "Watch your downloaded videos anytime, anywhere, without the need for internet"),
         "intro_second": MessageLookupByLibrary.simpleMessage(
             "Enjoy quick downloads while keeping your data safe and secure"),
         "intro_started": MessageLookupByLibrary.simpleMessage(
@@ -34,6 +37,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "title_intro_second":
             MessageLookupByLibrary.simpleMessage("Fast & Secure"),
         "title_intro_started":
-            MessageLookupByLibrary.simpleMessage("Esaily Download Videos")
+            MessageLookupByLibrary.simpleMessage("Easily Download Videos"),
+        "upgrade_premium":
+            MessageLookupByLibrary.simpleMessage("Upgrade to Premium")
       };
 }

@@ -5,5 +5,8 @@
  "title_intro_second": "Nhanh chóng & An toàn",
  "intro_second": "Tận hưởng tốc độ tải nhanh chóng, đồng thời đảm bảo dữ liệu của bạn luôn an toàn và bảo mật.",
  "title_intro_ended": "Xem ngoại tuyến", 
- "intro_ended":"Xem video đã tải bất cứ lúc nào, ở bất kỳ đâu mà không cần kết nối internet."
+ "intro_ended":"Xem video đã tải bất cứ lúc nào, ở bất kỳ đâu mà không cần kết nối internet.",
+ "hint_textfield_download": "Liên kết dán để tải xuống",
+ "upgrade_premium": "Nâng cấp lên Premium",
+ "download": "Tải xuống"
 }

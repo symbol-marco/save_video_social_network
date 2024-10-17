@@ -50,19 +50,23 @@ class _SvNavigationBarState extends ConsumerState<SvNavigationBar>
                 onTap: (value) => ref
                     .read(bottomNavControllerProvider.notifier)
                     .selectTab(value, _animationController),
-                items: [
-                  Assets.lottie.home.lottie(
-                      controller: _animationController,
-                      onLoaded: (composition) => _animationController
-                        ..duration = composition.duration),
-                  Assets.lottie.bookmarkTag.lottie(
-                      controller: _animationController,
-                      onLoaded: (composition) => _animationController
-                        ..duration = composition.duration),
-                  Assets.lottie.account.lottie(
-                      controller: _animationController,
-                      onLoaded: (composition) => _animationController
-                        ..duration = composition.duration),
+                items: const [
+                  Icon(Icons.home),
+                  Icon(Icons.bookmark),
+                  Icon(Icons.account_balance),
+
+                  // Assets.lottie.home.lottie(
+                  //     controller: _animationController,
+                  //     onLoaded: (composition) => _animationController
+                  //       ..duration = composition.duration),
+                  // Assets.lottie.emptyItem.lottie(
+                  //     controller: _animationController,
+                  //     onLoaded: (composition) => _animationController
+                  //       ..duration = composition.duration),
+                  // Assets.lottie.account.lottie(
+                  //     controller: _animationController,
+                  //     onLoaded: (composition) => _animationController
+                  //       ..duration = composition.duration),
                 ])),
       ),
     );

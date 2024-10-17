@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `Esaily Download Videos`
+  /// `Easily Download Videos`
   String get title_intro_started {
     return Intl.message(
-      'Esaily Download Videos',
+      'Easily Download Videos',
       name: 'title_intro_started',
       desc: '',
       args: [],
@@ -110,11 +110,41 @@ class S {
     );
   }
 
-  /// `Watch your downloaded videos anytime, anywhere, withou the need for internet`
+  /// `Watch your downloaded videos anytime, anywhere, without the need for internet`
   String get intro_ended {
     return Intl.message(
-      'Watch your downloaded videos anytime, anywhere, withou the need for internet',
+      'Watch your downloaded videos anytime, anywhere, without the need for internet',
       name: 'intro_ended',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Paste link to downloads`
+  String get hint_textfield_download {
+    return Intl.message(
+      'Paste link to downloads',
+      name: 'hint_textfield_download',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upgrade to Premium`
+  String get upgrade_premium {
+    return Intl.message(
+      'Upgrade to Premium',
+      name: 'upgrade_premium',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Download`
+  String get download {
+    return Intl.message(
+      'Download',
+      name: 'download',
       desc: '',
       args: [],
     );

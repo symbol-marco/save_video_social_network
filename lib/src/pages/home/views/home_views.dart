@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:save_video_social_network/src/components/animated_button.dart';
+import 'package:save_video_social_network/src/pages/home/views/components/text_field_component.dart';
 
 class HomeViews extends StatefulWidget {
   static const name = 'homepage';
@@ -12,8 +14,28 @@ class _HomepageViewsState extends State<HomeViews> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-          width: double.infinity, height: double.infinity, color: Colors.white),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Center(
+            child: TextFieldComponent(filled: true),
+          ),
+          const AnimatedButton(),
+          Container(
+            child: GridView.builder(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return null;
+              },
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 2.0,
+                  mainAxisExtent: 2.0,
+                  childAspectRatio: 0.36),
+            ),
+          )
+        ],
+      ),
     );
   }
 }

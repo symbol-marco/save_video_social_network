@@ -24,12 +24,53 @@ class $AssetsImagesGen {
 class $AssetsLottieGen {
   const $AssetsLottieGen();
 
+  /// File path: assets/lottie/account.json
+  LottieGenImage get account =>
+      const LottieGenImage('assets/lottie/account.json');
+
+  /// File path: assets/lottie/bookmark-tag.json
+  LottieGenImage get bookmarkTag =>
+      const LottieGenImage('assets/lottie/bookmark-tag.json');
+
+  /// File path: assets/lottie/congratulations.json
+  LottieGenImage get congratulations =>
+      const LottieGenImage('assets/lottie/congratulations.json');
+
+  /// File path: assets/lottie/empty_item.json
+  LottieGenImage get emptyItem =>
+      const LottieGenImage('assets/lottie/empty_item.json');
+
+  /// File path: assets/lottie/home.json
+  LottieGenImage get home => const LottieGenImage('assets/lottie/home.json');
+
+  /// File path: assets/lottie/home_navbar.json
+  LottieGenImage get homeNavbar =>
+      const LottieGenImage('assets/lottie/home_navbar.json');
+
+  /// File path: assets/lottie/lost_connection_panda.json
+  LottieGenImage get lostConnectionPanda =>
+      const LottieGenImage('assets/lottie/lost_connection_panda.json');
+
   /// File path: assets/lottie/panda_intro_started.json
   LottieGenImage get pandaIntroStarted =>
       const LottieGenImage('assets/lottie/panda_intro_started.json');
 
+  /// File path: assets/lottie/that it.json
+  LottieGenImage get thatIt =>
+      const LottieGenImage('assets/lottie/that it.json');
+
   /// List of all assets
-  List<LottieGenImage> get values => [pandaIntroStarted];
+  List<LottieGenImage> get values => [
+        account,
+        bookmarkTag,
+        congratulations,
+        emptyItem,
+        home,
+        homeNavbar,
+        lostConnectionPanda,
+        pandaIntroStarted,
+        thatIt
+      ];
 }
 
 class Assets {

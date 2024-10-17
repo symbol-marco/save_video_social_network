@@ -39,12 +39,12 @@ class _GettingStartedViewsState extends State<GettingStartedViews> {
         PageViewModel(
             title: S.current.title_intro_started,
             body: S.current.intro_started,
-            image: Assets.lottie.pandaIntroStarted.lottie(),
+            image: Assets.lottie.bookmarkTag.lottie(),
             decoration: pageDecoration),
         PageViewModel(
             title: S.current.title_intro_second,
             body: S.current.intro_second,
-            image: Assets.lottie.pandaIntroStarted.lottie(),
+            image: Assets.lottie.account.lottie(),
             decoration: pageDecoration),
         PageViewModel(
             title: S.current.title_intro_ended,

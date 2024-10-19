@@ -32,6 +32,7 @@ dependencies:
   flutter_gen_runner: ^5.8.0
   dio: ^5.7.0
   curved_navigation_bar: ^1.0.6
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
